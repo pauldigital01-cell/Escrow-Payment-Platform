@@ -129,12 +129,6 @@ graph LR
 
 ### Installation
 
-```bash
-git clone https://github.com/Be-bibek/web3-TimeLockNotExpired.git
-cd web3-TimeLockNotExpired
-npm install
-npm run dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
