@@ -1,0 +1,40 @@
+<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;border-radius:12px;background:#0f1117">
+  <!-- Background -->
+  <rect width="700" height="280" fill="#0f1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="350" y="32" font-family="monospace" font-size="14" fill="#f59e0b" text-anchor="middle" font-weight="bold">POLICY CONTRACT — CCIHX5...U7VE</text>
+
+  <!-- Contract Box -->
+  <rect x="220" y="55" width="260" height="170" rx="10" fill="#1c1008" stroke="#d97706" stroke-width="2"/>
+  <text x="350" y="78" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">🔑 Authorization Engine</text>
+
+  <!-- is_auth function -->
+  <rect x="245" y="90" width="210" height="50" rx="6" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="350" y="110" font-family="monospace" font-size="10" fill="#fcd34d" text-anchor="middle" font-weight="bold">fn is_auth(user: Address) → bool</text>
+  <text x="350" y="128" font-family="monospace" font-size="9" fill="#fde68a" text-anchor="middle">Validates caller is authorized</text>
+
+  <!-- Logic description -->
+  <rect x="245" y="152" width="210" height="60" rx="6" fill="#1e293b"/>
+  <text x="350" y="170" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">✅ Returns true → withdrawal proceeds</text>
+  <text x="350" y="185" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">❌ Returns false → Error(Contract, #3)</text>
+  <text x="350" y="200" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">Extendable: add DAO, multisig, etc.</text>
+
+  <!-- From Escrow Arrow -->
+  <line x1="40" y1="140" x2="215" y2="140" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="215,135 227,140 215,145" fill="#7c3aed"/>
+  <text x="5" y="128" font-family="monospace" font-size="10" fill="#a78bfa">Escrow</text>
+  <text x="2" y="141" font-family="monospace" font-size="10" fill="#a78bfa">Contract</text>
+  <text x="7" y="154" font-family="monospace" font-size="10" fill="#a78bfa">calls →</text>
+
+  <!-- To Escrow Result Arrow -->
+  <line x1="485" y1="140" x2="620" y2="140" stroke="#34d399" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="620,135 632,140 620,145" fill="#34d399"/>
+  <text x="632" y="133" font-family="monospace" font-size="10" fill="#34d399">bool</text>
+  <text x="628" y="146" font-family="monospace" font-size="10" fill="#34d399">result</text>
+  <text x="625" y="159" font-family="monospace" font-size="10" fill="#34d399">→ back</text>
+
+  <!-- Network badge -->
+  <rect x="240" y="232" width="220" height="22" rx="6" fill="#1e293b"/>
+  <text x="350" y="247" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">🌐 Stellar Soroban Testnet</text>
+</svg>

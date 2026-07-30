@@ -1,0 +1,46 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;border-radius:12px;background:#0f1117">
+  <!-- Background -->
+  <rect width="700" height="300" fill="#0f1117" rx="12"/>
+  
+  <!-- Title -->
+  <text x="350" y="32" font-family="monospace" font-size="14" fill="#a78bfa" text-anchor="middle" font-weight="bold">ESCROW CONTRACT — CCQYG4...UCCR</text>
+
+  <!-- Contract Box -->
+  <rect x="200" y="55" width="300" height="200" rx="10" fill="#1e1b4b" stroke="#7c3aed" stroke-width="2"/>
+  <text x="350" y="78" font-family="monospace" font-size="11" fill="#c4b5fd" text-anchor="middle">📦 Storage</text>
+  <rect x="220" y="85" width="260" height="50" rx="6" fill="#312e81"/>
+  <text x="350" y="104" font-family="monospace" font-size="10" fill="#e2e8f0" text-anchor="middle">balance: Map&lt;Address, i128&gt;</text>
+  <text x="350" y="122" font-family="monospace" font-size="10" fill="#e2e8f0" text-anchor="middle">unlock_time: Map&lt;Address, u64&gt;</text>
+
+  <!-- deposit function -->
+  <rect x="220" y="148" width="120" height="40" rx="6" fill="#065f46" stroke="#34d399" stroke-width="1.5"/>
+  <text x="280" y="165" font-family="monospace" font-size="9" fill="#34d399" text-anchor="middle" font-weight="bold">fn deposit()</text>
+  <text x="280" y="180" font-family="monospace" font-size="8" fill="#a7f3d0" text-anchor="middle">user, amount, unlock_time</text>
+
+  <!-- withdraw function -->
+  <rect x="360" y="148" width="120" height="40" rx="6" fill="#7f1d1d" stroke="#f87171" stroke-width="1.5"/>
+  <text x="420" y="165" font-family="monospace" font-size="9" fill="#f87171" text-anchor="middle" font-weight="bold">fn withdraw()</text>
+  <text x="420" y="180" font-family="monospace" font-size="8" fill="#fca5a5" text-anchor="middle">user, policy_addr</text>
+
+  <!-- Error codes -->
+  <text x="350" y="218" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Errors: #1 InsufficientFunds</text>
+  <text x="350" y="232" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">#2 TimeLockNotExpired  #3 UnauthorizedPolicy</text>
+
+  <!-- Left arrow (User → deposit) -->
+  <line x1="40" y1="168" x2="195" y2="168" stroke="#34d399" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="195,163 207,168 195,173" fill="#34d399"/>
+  <text x="20" y="150" font-family="monospace" font-size="10" fill="#34d399">User</text>
+  <text x="15" y="163" font-family="monospace" font-size="10" fill="#34d399">Wallet</text>
+
+  <!-- Right arrow (withdraw → Policy) -->
+  <line x1="507" y1="168" x2="640" y2="168" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="640,163 652,168 640,173" fill="#f59e0b"/>
+  <text x="648" y="155" font-family="monospace" font-size="10" fill="#f59e0b">Policy</text>
+  <text x="645" y="168" font-family="monospace" font-size="10" fill="#f59e0b">Contract</text>
+  <text x="645" y="181" font-family="monospace" font-size="10" fill="#f59e0b">↓</text>
+  <text x="636" y="194" font-family="monospace" font-size="10" fill="#f59e0b">is_auth()</text>
+
+  <!-- Network badge -->
+  <rect x="240" y="248" width="220" height="22" rx="6" fill="#1e293b"/>
+  <text x="350" y="263" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">🌐 Stellar Soroban Testnet</text>
+</svg>
